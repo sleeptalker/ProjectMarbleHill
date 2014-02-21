@@ -1,0 +1,27 @@
+Notes about ArduIMU Quadcopter configuration...
+
+ESC setup
+ - I connected only one ESC BEC (red wire) to the ArduIMU, the other 3 ESC´s only use two wires(white and black). 
+   I made this on the male servo connector. Only one connector has 3 pins, the other has 2 pins (remove the central pin)
+ - All ESC´s must have the same throttle range (I adjusted manually)
+ - I change the timing to "Normal" setup (don´t use Hard timing)
+
+ArduIMU programming
+ - Be sure the main Quad battery is Disconnected.
+ - I disconnect the ESC with the BEC to programm the ArduIMU. If you don´t do this you hear some "strange" beeps from ESC´s...
+
+Radio setup
+ - You should put the number of channels to read "#define MAX_CHANNELS 4". This depends on your configuration (I think that with 
+   PPM encoder this should be 7). If this number is not correct you see that the radio values that appears on start are bad
+   so try again...
+
+IMU setup 
+ - We have to take the offset values for the IMU sensors. Put the IMU flat and read the values that appear on screen. 
+   To take acc_offset_z value you should put the IMU at 90º (or substract g_value to the flat z reading...)
+ - Adjust Gyro gains (you can adjust first yaw gyro gain and then you should use OUTPUTMODE=0 to adjust roll and
+   pitch gyro, see ArduIMU info...)
+
+QUAD PID gains
+ - The gains depends on quad size, motor, weight... so take this values as a first approach.
+
+Please be carefull, quadcopters are not toys...

@@ -1,0 +1,21 @@
+Digital - 0 (Serial TTL RX) = 
+Digital - 1 (Serial TTL TX) = 
+Digital - 2 (Interrupt) = Free-fall detection?
+Digital - 3 (Interrupt) and (PWM) =  Thrust Motor #LF
+Digital - 4 = RC Input Channel 1
+Digital - 5 (PWM) = RC Input Channel 2
+Digital - 6 (PWM) = RC Input Channel 3
+Digital - 7 = RC Input Channel 4
+Digital - 8 = RC Input Channel 5
+Digital - 9 (PWM) = Thrust Motor #RF
+Digital - 10 (PWM) = Thrust Motor #RA
+Digital - 11 (PWM) = Thrust Motor #LA
+Digital - 12 = RC Input Channel 6
+Digital - 13 (Integral LED) = 
+
+Analog	- A0 = 
+Analog	- A1 = 
+Analog	- A2 = 
+Analog	- A3 = 
+Analog	- A4 (I2C SDA) = 6DOF / Magnetometer / Barometer
+Analog	- A5 (I2C SCL) = 6DOF / Magnetometer / Barometer
